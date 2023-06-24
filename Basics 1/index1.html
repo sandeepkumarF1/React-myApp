@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>root</title>
+</head>
+
+<body>
+    <div id="root"></div>
+    <!-- <script>
+        const name = document.createElement("p");
+        name.innerHTML = "What's your name?";
+        const nameShow = document.getElementById("root");
+        nameShow.appendChild(name);
+    </script> -->
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script>
+        const name = React.createElement("h2",{},"Mandeep Singh");
+        const nameShow = ReactDOM.createRoot(document.getElementById("root"));
+        nameShow.render(name);
+        console.log(name);
+        console.log(nameShow);
+    </script>
+</body>
+
+</html>
